@@ -25,16 +25,29 @@ public class task1 extends LinearOpMode {
                 motor2.setPower(-gamepad1.right_stick_y);
                 motor1.setPower(-gamepad1.left_stick_x);
                 motor2.setPower(gamepad1.left_stick_x);
+                
+                
                 if(gamepad1.a){
                     motor3.setPower(1);
-                }
-                if(gamepad1.b){
+                }else if {
                     motor3.setPower(0);
                 }
+                
+                if(gamepad1.b){
+                    motor3.setPower(-1);
+                }else if {
+                    motor3.setPower(0);
+                }                
+                
                 if(gamepad1.x){
                     motor4.setPower(1);
+                }else if {
+                    motor4.setPower(0);
                 }
+
                 if(gamepad1.y){
+                    motor4.setPower(-1);
+                }else if {
                     motor4.setPower(0);
                 }
 
