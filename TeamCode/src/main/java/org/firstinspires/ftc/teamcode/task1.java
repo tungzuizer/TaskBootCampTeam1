@@ -18,6 +18,10 @@ public class task1 extends LinearOpMode {
         motor4 = hardwareMap.get(DcMotor.class, "motor2");
         motor2.setDirection(DcMotor.Direction.REVERSE);
         motor1.setDirection(DcMotor.Direction.FORWARD);
+        
+        motor2.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        motor1.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        
         waitForStart();
         if (opModeIsActive()) {
             while (opModeIsActive()) {
